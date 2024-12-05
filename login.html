@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API密钥验证 - 漫画分镜头脚本生成器</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .login-container {
+            max-width: 500px;
+            margin: 100px auto;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+        }
+        .api-input {
+            width: 100%;
+            padding: 1rem;
+            margin: 1rem 0;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+        .error-message {
+            color: #e74c3c;
+            margin-top: 1rem;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>API密钥验证</h1>
+        <p style="margin: 1rem 0; color: #666;">请输入您的Deepseek API密钥以继续使用</p>
+        <input type="password" id="apiKeyInput" class="api-input" placeholder="请输入API密钥">
+        <button id="verifyBtn" class="primary-btn">验证并继续</button>
+        <div id="errorMessage" class="error-message">验证失败，请检查API密钥是否正确</div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html> 
